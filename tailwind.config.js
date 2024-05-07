@@ -8,17 +8,22 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    colors: {
-      primary: "#450C7D",
-      dark: "#171717",
-      black: "#000000",
-      white: "#ffffff",
-      secondary: "#171717",
-      darkGrey: "#c8c8c8",
-      lightGrey: "#cecece",
-      body: "#f6f6f6",
+
+    extend: {
+      colors: {
+        primary: "#450C7D",
+        dark: "#171717",
+        black: "#000000",
+        white: "#ffffff",
+        secondary: "#171717",
+        darkGrey: "#4e4e4e",
+        lightGrey: {
+          300: "#cecece",
+          400: "#c8c8c8",
+        },
+        body: "#f6f6f6",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };

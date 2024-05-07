@@ -8,6 +8,156 @@
     <title>Vite App</title>
   </head>
   <body>
-    <h1 class="text-4xl bg-amber-400">TEXT</h1>
+    <div class="wrapper px-7 lg:px-10 py-6 bg-body">
+      <main class="wrapper__main flex flex-col gap-24">
+        <div class="h-screen">
+          <header class="wrapper__header flex justify-between items-center">
+            <div class="flex gap-4 items-center lg:block lg:gap-0">
+              <button
+                class="wrapper__open-nav lg:hidden inline-flex items-center justify-center"
+              >
+                <i class="bi bi-list text-xl mt-2"></i>
+              </button>
+              <img
+                class="wrapper__logo"
+                src="./assets/logo.svg"
+                alt="High Alfa CORP."
+              />
+            </div>
+            <div class="flex items-center gap-[52px]">
+              <nav class="wrapper__nav">
+                <div
+                  data-isOpen="true"
+                  class="wrapper__side-menu-overlay absolute z-10 bg-indigo-200 opacity-20 h-screen w-screen lg:hidden"
+                ></div>
+                <ul
+                  data-isOpen="true"
+                  class="wrapper__nav-list z-10 flex flex-col absolute lg:relative h-screen lg:h-auto w-3/4 lg:w-auto bg-white bg-opacity-5 backdrop-blur-xl border-e-2 lg:border-0 border-dark lg:bg-transparent lg:flex-row lg:items-center lg:gap-[52px] lg:text-[18px]"
+                >
+                  <button
+                    class="wrapper__close-nav text-dark text-2xl block lg:hidden p-5 pt-0 mt-6 ms-auto"
+                  >
+                    <i class="bi bi-x-lg"></i>
+                  </button>
+                  <li class="block p-6 lg:p-0 pt-0">
+                    <a
+                      class="ps-2 lg:ps-0 border-s-2 lg:border-s-0 border-dark"
+                      href="#Studio"
+                      >Studio</a
+                    >
+                  </li>
+                  <li class="block p-6 lg:p-0">
+                    <a
+                      class="ps-2 lg:ps-0 border-s-2 lg:border-s-0 border-dark"
+                      href="#Capital"
+                      >Capital</a
+                    >
+                  </li>
+                  <li class="block p-6 lg:p-0">
+                    <a
+                      class="ps-2 lg:ps-0 border-s-2 lg:border-s-0 border-dark"
+                      href="#Companies"
+                      >Companies</a
+                    >
+                  </li>
+                  <li class="block p-6 lg:p-0">
+                    <a
+                      class="ps-2 lg:ps-0 border-s-2 lg:border-s-0 border-dark"
+                      href="#Team"
+                      >Team</a
+                    >
+                  </li>
+                  <li class="block p-6 lg:p-0">
+                    <a
+                      class="ps-2 lg:ps-0 border-s-2 lg:border-s-0 border-dark"
+                      href="#About"
+                      >About</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <button
+                class="inline-flex items-center gap-3 lg:gap-6 bg-dark text-white rounded-full px-4 py-2 lg:px-6 lg:py-3"
+              >
+                <span class="text-[12px]">Build With Us</span>
+                <i
+                  class="bi bi-arrow-right text-white text-[16px] lg:text-[20px]"
+                ></i>
+              </button>
+            </div>
+          </header>
+          <section class="wrapper___hero mt-4 lg:mt-10">
+            <div
+              class="wrapper__hero-header grid grid-cols-1 lg:grid-cols-[70%30%] items-end"
+            >
+              <h1
+                class="wrapper__hero-Title text-6xl lg:text-[82px] font-medium lg:font-normal leading-[101.5px]"
+              >
+                <span class="text-dark">Building with Founders</span><br />
+                <span class="text-primary">to Go Faster and Further</span>
+              </h1>
+              <div
+                class="wrapper__hero-desc text-[16px] leading-[30px] lg:mb-4"
+              >
+                <span class="text-dark font-medium"
+                  >High Alpha is a venture studio.</span
+                >
+                <span class="text-darkGrey">
+                  We create and fund B2B SaaS companies — partnering with
+                  founders to build businesses that reach their full potential.
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="wrapper__hero-cards h-[320px] mt-[60px] grid grid-cols-1 lg:grid-cols-2 gap-5"
+            >
+              <div class="wrapper__hero-card">
+                <div class="wrapper__hero-card-header flex items-center gap-3">
+                  <h3
+                    class="wrapper__hero-card-title text-white text-[32px] font-normal"
+                  >
+                    Studio
+                  </h3>
+                  <i
+                    class="bi bi-arrow-right-circle text-white text-[25px]"
+                  ></i>
+                </div>
+                <p class="wrapper__hero-card-desc text-lightGrey-400 text-base">
+                  We co-create with founders to explore, build, and scale
+                  together.
+                </p>
+                <img
+                  class="wrapper__hero-card-img"
+                  src="./assets/img/cubes-illustration.svg"
+                  alt="High Alfa Studio"
+                />
+              </div>
+              <div class="wrapper__hero-card">
+                <div class="wrapper__hero-card-header flex items-center gap-3">
+                  <h3
+                    class="wrapper__hero-card-title text-white text-[32px] font-normal"
+                  >
+                    Capital
+                  </h3>
+                  <i
+                    class="bi bi-arrow-right-circle text-white text-[25px]"
+                  ></i>
+                </div>
+                <p class="wrapper__hero-card-desc text-lightGrey-400 text-base">
+                  We invest in enterprise software companies.
+                </p>
+                <img
+                  class="wrapper__hero-card-img"
+                  src="./assets/img/walls-illustration.svg"
+                  alt="High Alfa Studio"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>

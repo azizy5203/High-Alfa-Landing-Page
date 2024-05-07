@@ -1,5 +1,6 @@
+import { resolve } from "path";
 module.exports = {
-  root: "./src",
+  root: resolve(__dirname, "src"),
   build: {
     outDir: "./dist",
   },
