@@ -2,6 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* :root {
+  --base-size: 1rem;
+  --scale-factor: 1.125;
+  --h3: calc(var(--base-size) * var(--scale-factor));
+  --h2: calc((var(--h3) * var(--scale-factor)));
+  --h1: calc((var(--h2) * var(--scale-factor)));
+  --text-sm: calc((var(--base-size) / var(--scale-factor)));
+}
+
+h1 {
+  font-size: var(--h1) !important;
+}
+
+h2 {
+  font-size: var(--h2) !important;
+}
+h3 {
+  font-size: var(--h3) !important;
+}
+p {
+  font-size: var(--base-size) !important;
+}
+small,
+.text-small,
+.text-sm {
+  font-size: var(--base-size) !important;
+}
+
+@media (width < 480px) {
+  :root {
+    --scale-factor: 1.333;
+    
+  }
+}
+
+@media (width > 480px) and (width < 770px) {
+  :root {
+    --scale-factor: 1.25;
+  }
+} */
+
 @font-face {
   font-family: "Inter";
   src: url("./assets/fonts/Inter-bold.ttf") format("truetype");
@@ -18,18 +91,14 @@
   font-weight: 400;
 }
 
-* {
-  font-family: "Inter", sans-serif;
-}
-
 .wrapper {
   &__hero-card {
-    display: grid;
+    /* display: grid;
     grid-auto-columns: 50% 50%;
     grid-template-rows: repeat(4, 25%);
     padding: 32px;
     border-radius: 6px;
-    background-color: #171717;
+    background-color: #171717; */
   }
 
   &__hero-card-header {
@@ -41,11 +110,10 @@
   }
 
   &__hero-card-img {
-    grid-area: 1/2;
-    justify-self: end;
+    grid-area: 2/2;
 
-    width: 143px;
-    height: 166px;
+    /* width: 143px;
+    height: 166px; */
   }
 
   &__nav-list {
@@ -67,4 +135,96 @@
       left: -100vw;
     }
   }
+}
+
+@media (width < 481px) {
+  .wrapper {
+    &__hero-card {
+      /* display: grid;
+      grid-auto-columns: 50% 50%;
+      grid-template-rows: repeat(4, 25%);
+      padding: 32px;
+      border-radius: 6px;
+      background-color: #171717; */
+    }
+
+    &__hero-card-header {
+      grid-area: unset;
+    }
+
+    &__hero-card-desc {
+      grid-area: unset;
+    }
+
+    &__hero-card-img {
+      grid-area: unset;
+
+      /* width: 143px;
+      height: 166px; */
+    }
+  }
+}
+
+/* Headings */
+h1 {
+  font-size: clamp(24px, 5vw, 48px);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: clamp(20px, 4vw, 40px);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: clamp(18px, 3.5vw, 32px);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: clamp(16px, 3vw, 28px);
+  font-weight: bold;
+}
+
+h5 {
+  font-size: clamp(14px, 2.5vw, 24px);
+  font-weight: bold;
+}
+
+h6 {
+  font-size: clamp(12px, 2vw, 20px);
+  font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+  font-size: clamp(14px, 2.5vw, 18px);
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  font-size: clamp(14px, 2.5vw, 18px);
+  text-decoration: none;
+  // color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  font-size: clamp(14px, 2.5vw, 18px);
+  // padding: 0.5em 1em;
+  // background-color: #007bff;
+  // color: #fff;
+  // border: none;
+  // border-radius: 4px;
+  // cursor: pointer;
+}
+
+/* Small text */
+small {
+  font-size: clamp(10px, 1.5vw, 14px);
 }
