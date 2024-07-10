@@ -1,5 +1,6 @@
 import "./index.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import swiper from "./assets/js/swiper";
 
 const navMenu = document.querySelector(".wrapper__nav-list");
 const sideMenuOverlay = document.querySelector(".wrapper__side-menu-overlay");
